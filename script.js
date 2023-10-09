@@ -13,6 +13,10 @@ let box;
 let boxX = 512;
 let boxY = 70;
 let color = "black";
+let bodyWidth;
+let bodyHeight;
+let spaceX;
+let spaceY;
 const filledBoxes = [];
 let isDraw = true;
 let hold = false;
@@ -37,6 +41,11 @@ function openCanvas(e) {
         }
         filledBoxes.push(row);
     }
+    bodyWidth = window.innerWidth;
+    bodyHeight = window.innerHeight;
+    spaceX = (bodyWidth - 512) / 2;
+    spaceY = (bodyHeight - 512) / 2;
+    canvas.style.marginTop = `${spaceY}px`;
 }
 
 document.addEventListener("mousemove", e => {
@@ -44,8 +53,8 @@ document.addEventListener("mousemove", e => {
         main.fillStyle = filledBoxes[boxY / box][boxX / box];
         main.fillRect(boxX, boxY, box, box);
     }
-    boxX = box * (Math.floor((e.clientX - 512) / box));
-    boxY = box * (Math.floor((e.clientY - 70) / box));
+    boxX = box * (Math.floor((e.clientX - spaceX) / box));
+    boxY = box * (Math.floor((e.clientY - spaceY) / box));
     main.fillStyle = "rgba(0, 0, 0, 0.2)";
     main.fillRect(boxX, boxY, box, box);
 });
@@ -91,11 +100,12 @@ function changeColor() {
     showRgb.innerHTML = rgb;
     showColor.style.backgroundColor = rgb;
 }
-// ------------------Plans------------------------
-// mouse holding --- Done
+
+// -----------------------------------------------
+// mouse holding --- +++++
 // different sizes
 // filling
-// rgb palette --- Done
+// rgb palette --- +++++
 // spaces in drawing
 // animation
 // color picker
@@ -103,4 +113,5 @@ function changeColor() {
 // return button
 // Downloading
 // Ctrl + Z
+// Clear All
 // -----------------------------------------------

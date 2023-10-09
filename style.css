@@ -47,11 +47,12 @@
   display: none;
   outline: 1px solid black;
   margin: auto;
-  margin-top: 70px;
 }
 
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .rgb-palette {
