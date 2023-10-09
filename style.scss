@@ -1,0 +1,112 @@
+.list {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 930px;
+    height: 295px;
+    transition: 1s;
+    & > li {
+        width: 930px;
+        height: 140px;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            gap: 15px;
+        }
+        &:last-child {
+            padding: 0px calc(315px / 2);
+        }
+    }
+
+
+    button {
+        width: 300px;
+        height: 140px;
+        border-radius: 15px;
+        border-color: transparent;
+        background-color: rgb(49, 239, 65);
+        color: white;
+        font-size: larger;
+        cursor: pointer;
+        display: block;
+        &:hover {
+            background-color: rgb(43, 212, 57);
+            transition: 500ms;
+        }
+    }
+}
+
+.title {
+    text-align: center;
+}
+
+.canvas {
+    display: none;
+    outline: 1px solid black;
+    margin: auto;
+    margin-top: 70px;
+}
+
+body {
+    margin: 0;
+}
+
+.rgb-palette {
+    display: none;
+    outline: 1px dotted black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 400px;
+    background-color: rgb(111, 111, 111);
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 20px;
+        gap: 10px;
+        align-items: center;
+        li {
+            background-color: rgb(145, 145, 145);
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        
+    }
+    div {
+        width: 100%;
+        height: 200px;
+        background-color: black;
+    }
+    h2 {
+        text-align: center;
+        color: white;
+    }
+    p {
+        text-align: center;
+        color: white;
+        background: linear-gradient(90deg,
+                    rgba(255, 0, 0, 1) 0%,
+                    rgba(255, 154, 0, 1) 10%,
+                    rgba(208, 222, 33, 1) 20%,
+                    rgba(79, 220, 74, 1) 30%,
+                    rgba(63, 218, 216, 1) 40%,
+                    rgba(47, 201, 226, 1) 50%,
+                    rgba(28, 127, 238, 1) 60%,
+                    rgba(95, 21, 242, 1) 70%,
+                    rgba(186, 12, 248, 1) 80%,
+                    rgba(251, 7, 217, 1) 90%,
+                    rgba(255, 0, 0, 1) 100%);
+    }
+}

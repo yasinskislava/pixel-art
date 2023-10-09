@@ -1,0 +1,98 @@
+.list {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 930px;
+  height: 295px;
+  transition: 1s;
+}
+.list > li {
+  width: 930px;
+  height: 140px;
+}
+.list > li ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 15px;
+}
+.list > li:last-child {
+  padding: 0px 157.5px;
+}
+.list button {
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+  border-color: transparent;
+  background-color: rgb(49, 239, 65);
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+  display: block;
+}
+.list button:hover {
+  background-color: rgb(43, 212, 57);
+  transition: 500ms;
+}
+
+.title {
+  text-align: center;
+}
+
+.canvas {
+  display: none;
+  outline: 1px solid black;
+  margin: auto;
+  margin-top: 70px;
+}
+
+body {
+  margin: 0;
+}
+
+.rgb-palette {
+  display: none;
+  outline: 1px dotted black;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  background-color: rgb(111, 111, 111);
+}
+.rgb-palette ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 20px;
+  gap: 10px;
+  align-items: center;
+}
+.rgb-palette ul li {
+  background-color: rgb(145, 145, 145);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.rgb-palette div {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+.rgb-palette h2 {
+  text-align: center;
+  color: white;
+}
+.rgb-palette p {
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%);
+}/*# sourceMappingURL=style.css.map */

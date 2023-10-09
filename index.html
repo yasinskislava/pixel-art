@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <h1 class="title">Choose size</h1>
+        <ul class="list">
+            <li>
+                <ul class="list-first-row">
+                    <li>
+                        <button type="button" class="open-btn" value="32">16x16 pixels</button>
+                    </li>
+                    <li>
+                        <button type="button" class="open-btn" value="16">32x32 pixels</button>
+                    </li>
+                    <li>
+                        <button type="button" class="open-btn" value="8">Temporarily Not Available</button>
+                    </li> 
+                </ul>
+            </li>
+            <li>
+                <ul class="list-second-row">
+                    <li>
+                        <button type="button" class="open-btn" value="4">Temporarily Not Available</button>
+                    </li>
+                    <li>
+                        <button type="button" class="open-btn" value="2">Temporarily Not Available</button>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+    <canvas class='canvas' width='512px' height='512px' style='outline: 1px solid black;'></canvas>
+    <div class="rgb-palette">
+        <h2>RGB palette</h2>
+        <p id="show-rgb">rgb(0, 0, 0)</p>
+        <ul>
+            <li>Red <input id="red" type="range" min="0" max="255" value="0"></li>
+            <li>Green <input id="green" type="range" min="0" max="255" value="0"></li>
+            <li>Blue <input id="blue" type="range" min="0" max="255" value="0"></li>
+        </ul>
+        <div id="show-color"></div>
+    </div>
+    
+</body>
+</html>
